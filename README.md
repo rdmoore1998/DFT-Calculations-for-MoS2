@@ -178,11 +178,3 @@ matdyn.x < matdyn.in > matdyn.out  # Phonon dispersion
   - MoS$_2$ Monolayer Band Structure: Mak et al., Phys. Rev. Lett. 105, 136805 (2010).
 
 ---
-
-## **Contact**
-For any questions or issues, contact:
-- **Name**: [Your Name]
-- **Email**: [Your Email]
-- **Institution**: [Your Institution]
-
----
