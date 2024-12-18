@@ -25,7 +25,7 @@ plt.savefig("DOS.png",dpi=300)
 
 
 # Define threshold
-threshold = 0.7  # states/eV
+threshold = 0.01  # states/eV
 
 # Identify VBM
 # Iterate from lower energies upwards to find the last energy below 0 eV with DOS > threshold
