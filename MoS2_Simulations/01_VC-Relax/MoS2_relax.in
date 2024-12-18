@@ -1,1 +1,48 @@
-
+&CONTROL
+    calculation = 'vc-relax',    ! Variable-Cell Relaxation (Structural Optimization)
+    prefix = 'MoS2',
+    outdir = './',
+    pseudo_dir = '/home/rdm323/Workshop/ECMS_Course/MoS2/pseudoPotentials',
+    tstress = .true.,            ! Enable Stress Calculation
+    tprnfor = .true.,            ! Enable Force Calculation
+    etot_conv_thr = 1.0d-4,      ! Energy Tol Threshold
+    forc_conv_thr = 1.0d-3,      ! Force Tol Threshold
+    nstep = 100,              ! BFGs Steps
+/
+&SYSTEM
+    ibrav = 0,                   ! Defines Hexagonal Lattice
+    nat = 6,
+    ntyp = 2,
+    ecutwfc = 40.0,              ! Plane-wave cutoff energies for wavefunctions
+    ecutrho = 400.0,             ! Plane-wave cutoff energies for charge density
+    occupations = 'smearing',
+    smearing = 'gaussian',
+    degauss = 0.01,
+/
+&ELECTRONS
+    mixing_beta = 0.7,
+    conv_thr = 1.0d-8,
+/
+&IONS
+    ion_dynamics = 'bfgs',
+/
+&CELL
+    cell_dynamics = 'bfgs',
+    cell_dofree = 'all',
+/
+ATOMIC_SPECIES
+    Mo  95.95  Mo_ONCV_PBE-1.0.oncvpsp.upf
+    S   32.06  s_pbe_v1.4.uspp.F.UPF
+CELL_PARAMETERS (angstrom)
+    1.59611896  -2.76455913   0.00000000
+    1.59611896   2.76455913   0.00000000
+    0.00000000   0.00000000  13.37829400
+ATOMIC_POSITIONS (angstrom)
+    Mo  1.06407930   0.92151971   3.34457350
+    Mo  2.66019825   1.84303942  10.03372050
+    S   1.06407930   0.92151971   8.47282455
+    S   2.66019825   1.84303942   4.90546945
+    S   1.06407930   0.92151971  11.59410439
+    S   2.66019825   1.84303942   1.78418961
+K_POINTS automatic
+    6 6 1 0 0 0
