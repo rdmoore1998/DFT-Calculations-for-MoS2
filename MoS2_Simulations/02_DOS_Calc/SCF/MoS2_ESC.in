@@ -1,8 +1,8 @@
 &CONTROL
     calculation = 'scf',
     prefix = 'MoS2_ESC',
-    outdir = '/home/rdm323/Workshop/ECMS_Course/MoS2/Electronic_Structure_Calculations/Density_of_States/SCF_Calc',
-    pseudo_dir = '/home/rdm323/Workshop/ECMS_Course/MoS2/pseudoPotentials',
+    outdir = './',
+    pseudo_dir = '/Location to pseudo potentials/pseudoPotentials',
     tstress = .false.,
     tprnfor = .false.,
     etot_conv_thr = 1.0d-4,
