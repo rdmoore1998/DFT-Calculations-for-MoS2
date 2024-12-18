@@ -1,7 +1,7 @@
 # DFT-Calculations-for-MoS2
 
-# **MoS$_2$ Simulation Workflow: Electronic and Phonon Properties**
-This repository contains Quantum ESPRESSO input files, scripts, and results for simulating the structural, electronic, and phonon properties of bulk and monolayer MoS$_2$.
+# **MoS2 Simulation Workflow: Electronic and Phonon Properties**
+This repository contains Quantum ESPRESSO input files, scripts, and results for simulating the structural, electronic, and phonon properties of bulk and monolayer MoS2.
 
 The project involves **first-principles Density Functional Theory (DFT)** calculations to analyze:
 1. **Structural Relaxation**
@@ -80,7 +80,7 @@ The SCF calculation determines the **ground-state electron density**.
 - **Key Parameters**:
   - `ibrav=4`: Defines the hexagonal lattice.
   - `ecutwfc`: Plane-wave cutoff energy for wavefunctions.
-  - `k-point grid`: 6x6x6 for bulk MoS$_2$.
+  - `k-point grid`: 6x6x6 for bulk MoS2.
   - Atomic positions and pseudopotentials.
 
 #### **Execution**:
@@ -163,11 +163,11 @@ matdyn.x < matdyn.in > matdyn.out  # Phonon dispersion
 
 ## **Results**
 - **Electronic Properties**:
-  - Band structure reveals a **direct band gap** for monolayer MoS$_2$.
+  - Band structure reveals a **direct band gap** for monolayer MoS2.
   - DOS and PDOS confirm orbital contributions near the Fermi level.
 
 - **Vibrational Properties**:
-  - Phonon dispersion confirms the **dynamical stability** of MoS$_2$.
+  - Phonon dispersion confirms the **dynamical stability** of MoS2.
 
 ---
 
@@ -175,6 +175,6 @@ matdyn.x < matdyn.in > matdyn.out  # Phonon dispersion
 - Quantum ESPRESSO Documentation: [www.quantum-espresso.org](http://www.quantum-espresso.org)
 - Key Papers:
   - Perdew, Burke, Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996) — PBE Functional.
-  - MoS$_2$ Monolayer Band Structure: Mak et al., Phys. Rev. Lett. 105, 136805 (2010).
+  - MoS2 Monolayer Band Structure: Mak et al., Phys. Rev. Lett. 105, 136805 (2010).
 
 ---
