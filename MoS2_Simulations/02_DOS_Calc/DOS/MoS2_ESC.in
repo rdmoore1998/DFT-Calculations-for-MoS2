@@ -1,0 +1,6 @@
+&DOS
+    prefix = 'MoS2_ESC',
+    outdir = ' Location of SCF folder',
+    fildos = 'MoS2_dos.dat',
+    Emin = -10.0, Emax = 20.0, DeltaE = 0.001,
+/
