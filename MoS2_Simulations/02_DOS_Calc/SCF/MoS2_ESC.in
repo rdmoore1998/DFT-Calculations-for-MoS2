@@ -1,0 +1,40 @@
+&CONTROL
+    calculation = 'scf',
+    prefix = 'MoS2_ESC',
+    outdir = '/home/rdm323/Workshop/ECMS_Course/MoS2/Electronic_Structure_Calculations/Density_of_States/SCF_Calc',
+    pseudo_dir = '/home/rdm323/Workshop/ECMS_Course/MoS2/pseudoPotentials',
+    tstress = .false.,
+    tprnfor = .false.,
+    etot_conv_thr = 1.0d-4,
+    forc_conv_thr = 1.0d-3,
+/
+&SYSTEM
+    ibrav = 0,
+    nat = 6,
+    ntyp = 2,
+    ecutwfc = 40.0,
+    ecutrho = 400.0,
+    occupations = 'smearing',
+    smearing = 'gaussian',
+    degauss = 0.01,
+/
+&ELECTRONS
+    mixing_beta = 0.7,
+    conv_thr = 1.0d-8,
+/
+ATOMIC_SPECIES
+    Mo  95.95  Mo_ONCV_PBE-1.0.oncvpsp.upf
+    S   32.06  s_pbe_v1.4.uspp.F.UPF
+CELL_PARAMETERS (angstrom)
+   1.591925686  -2.757296167   0.000000000
+   1.591925686   2.757296167  -0.000000000
+  -0.000000000  -0.000000000  14.597493422
+ATOMIC_POSITIONS (angstrom)   ! Updated positions and cell parameters after VC-Relax
+Mo            1.0612837843        0.9190987224        3.6496700667
+Mo            2.6532094608        1.8381974447       10.9478233554
+S             1.0612837843        0.9190987224        9.3842673102
+S             2.6532094608        1.8381974447        5.2132261119
+S             1.0612837843        0.9190987224       12.5114136815
+S             2.6532094608        1.8381974447        2.0860797406
+K_POINTS automatic
+    6 6 1 0 0 0                                        ! Monkhorst-Pack grid
